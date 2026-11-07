@@ -308,6 +308,91 @@ section {
    NATIONSTATES LINKS
    ========================= */
 
+/* =========================
+   LATEST NEWS
+   ========================= */
+
+.latest-news {
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(217, 75, 85, 0.12),
+      transparent 35%
+    ),
+    var(--panel);
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  padding: 32px;
+
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+
+  overflow: hidden;
+}
+
+.news-badge {
+  display: inline-block;
+
+  padding: 6px 11px;
+
+  background: rgba(217, 75, 85, 0.14);
+  color: #f07880;
+
+  border: 1px solid rgba(217, 75, 85, 0.25);
+  border-radius: 999px;
+
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.latest-news h2 {
+  margin: 14px 0 8px;
+
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.latest-news p {
+  max-width: 750px;
+
+  color: var(--muted);
+  margin: 0 0 22px;
+}
+
+.news-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  background: rgba(217, 75, 85, 0.12);
+  border: 1px solid rgba(217, 75, 85, 0.35);
+  border-radius: 10px;
+
+  color: #f07880;
+  font-weight: 900;
+  text-decoration: none;
+
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.news-button:hover {
+  transform: translateY(-2px);
+
+  background: rgba(217, 75, 85, 0.20);
+  border-color: rgba(217, 75, 85, 0.65);
+}
+
 .references {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -570,6 +655,35 @@ footer strong {
   </section>
 
   <!-- NATIONSTATES RESOURCES -->
+
+  <!-- LATEST NEWS -->
+
+<section id="news">
+
+  <div class="latest-news">
+
+    <div class="news-badge">
+      Latest News
+    </div>
+
+    <h2>Latest from Tushto</h2>
+
+    <p>
+      Read the most recent news and developments from
+      the Comrade Commonwealth of Tushto.
+    </p>
+
+    <a class="news-button"
+       href="https://www.nationstates.net/page=dispatch/id=2830027"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      Read the latest article →
+    </a>
+
+  </div>
+
+</section>
 
   <section id="nation">
 
